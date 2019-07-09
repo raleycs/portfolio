@@ -7,7 +7,7 @@ import './App.css';
 function App() {
     return (
         <div>
-            <Link href={""}>ww</Link>
+            <Link href={""}></Link>
         </div>
     );
 }
