@@ -5,7 +5,6 @@ import '../assets/scss/components/_date.scss'
 import '../assets/scss/components/_company.scss'
 import profile from '../images/profile.jpg'
 import bsides from '../images/bsides.jpg'
-//import pic03 from '../images/pic03.jpg'
 
 class Main extends React.Component {
     render() {
@@ -29,25 +28,22 @@ class Main extends React.Component {
                 <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
                 <h2 className="major">Experience</h2>
 
-                <b>Cybersecurity Engineer Intern</b> <span className="date">May 2019 - Present</span>
+                <b>Cybersecurity Engineer Intern</b> <span className="date">May 2019 - Aug 2019</span>
                 <p className="company">Northrop Grumman<span className="date">McLean, VA</span></p>                 
-                <li> Created Angular 8 + Python Flask CRUD (Create, Read, Update, Delete) application to automate quality assessments for different task forces</li>
-                <li> Implemented solutions for Angular frontend application with backend APIs</li>
+                <li>Designed Angular 8 and Python web application to increase efficiency of quality assessments by implementing time-efficient automation.</li>
+                <li>Incorporated external REST API calls to Angular 7 web application in order to provide federated, bulk search capabilities to support DHS analysts.</li>
                 <hr/>
 
-                <b>Network Security Teacher Assistant</b> <span className="date">Aug 2018 - May 2019</span>
+                <b>Network Security Teacher Assistant</b> <span className="date">Aug 2018 - Present</span>
                 <p className="company">University of Virginia<span className="date">Charlottesville, VA</span></p>                 
-                <li> Lectured weekly in topics such as Session Hijacking, Cryptography, and Penetration Testing Techniques</li>
-                <li> Assisted students during in-class labs and assignments </li>
-                <li> Troubleshooted technical issues with virtual machines, network configurations, etc during office hours</li>
-
+                <li>Provided weekly presentations for session hijacking, cryptography, penetration testing/red teaming techniques.</li>
+                <li>Aided faculty in designing Ubuntu virtual machines for SSH Man-in-the-Middle and rogue X.509 certificate classroom activities.</li>
                 <hr/>
 
-                <b>Cybersecurity Research Assistant</b> <span className="date">May 2018 - May 2019</span>
+                <b>Cybersecurity Research Assistant</b> <span className="date">May 2018 - Present</span>
                 <p className="company">University of Virginia<span className="date">Charlottesville, VA</span></p>                 
-                <li>Compiled user-friendly tutorials on how to properly assess vulnerabilities and safely patch them</li>
-                <li> Experimented with Golden Ticket Kerberos attacks to increase global awareness and mitigate exploitations</li>
-                <li> Discovered how to autonomously install rogue X.509 certificates on Windows, Mac, and Linux machines</li>
+                <li>Developed user-friendly tutorials on how to properly assess, exploit, and patch vsftpd backdoor vulnerability (CVE-73573) on Linux machine.</li>
+                <li>Designed a guide on how to exploit Man-in-the-Middle between end users and a virtual private network to raise global awareness on the dangers of such attacks.</li>
 
                 <hr/>
 
@@ -58,7 +54,7 @@ class Main extends React.Component {
                 <a href="https://www.dailyprogress.com/news/uva/uva-bootcamp-aims-to-increase-it-training-for-teachers/article_f8a5e20a-7682-11e8-81a7-4fd889ca9dbf.html">Check out this article!</a>
                 </p>
                 <li> Managed <a href="https://blogs.cisco.com/perspectives/cyber-security-capture-the-flag-ctf-what-is-it">"Capture The Flag"</a> (CTF) challenges including digital forensics, SQL injections, and steganography</li>
-                <li> Optimized XSS and CSRF demonstrations to maintain compatibility between virtual machines</li>
+                <li>Arranged virtual machines to demonstrate the dangers of SQL injections, Cross-Site-Scripting (XSS), Cross-Site-Request-Forgery (CSRF) attacks to promote secure coding practicies</li>
 
                 <hr/>
 
@@ -78,10 +74,15 @@ class Main extends React.Component {
                 <h2 className="major">Education</h2>
                 <b>University of Virginia</b> <span className="date">Aug 2016 - Present</span>
                 <p className="company">Bachelor of Arts Computer Science</p>
-                <li>GPA: 3.73</li>
+                <li>Major GPA: 3.73</li>
+                <li>Overall GPA: 3.67</li>
                 <li>Department of Homeland Security Cybersecurity Focal Path</li>
+                    <ul>Pathway designed to satisfy the standards of the National Center of Academic Excellence in Cyber Defense Education.</ul>
                 <hr/>
                 <h2 className="major">Certificates</h2>
+                <b>AWS Solutions Architect Associate</b><span className="date">Aug 2022</span>
+                <p className="company">Amazon Web Services</p>
+
                 <b>Security+</b><span className="date">Jul 2021</span>
                 <p className="company">CompTIA</p>
 
@@ -89,41 +90,6 @@ class Main extends React.Component {
                 <p className="company">Cisco</p>
 
 
-                {close}
-                </article>
-
-
-                <article id="about" className={`${this.props.article === 'project' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-                <h2 className="major">Projects</h2>
-                <b>Vulnerability Scanning / Patching</b>
-                <li> Tutorials explaining how to properly scan for vulnerabilities on a computer and the necessary steps to take to patch them</li>
-                {close}
-                </article>
-
-                <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-                <h2 className="major">Contact</h2>
-                <form method="post" action="#">
-                <div className="field half first">
-                <label htmlFor="name">Name</label>
-                <input type="text" name="name" id="name" />
-                </div>
-                <div className="field half">
-                <label htmlFor="email">Email</label>
-                <input type="text" name="email" id="email" />
-                </div>
-                <div className="field">
-                <label htmlFor="message">Message</label>
-                <textarea name="message" id="message" rows="4"></textarea>
-                </div>
-                <ul className="actions">
-                <li><input type="submit" value="Send Message" className="special" /></li>
-                <li><input type="reset" value="Reset" /></li>
-                </ul>
-                </form>
-                <ul className="icons">
-                <li><a href="http://www.github.com/raleycs" className="icon fa-github"><span className="label">GitHub</span></a></li>
-                <li><a href="http://www.linkedin.com/in/csraley" className="icon fa-linkedin"><span className="label">Instagram</span></a></li>
-                </ul>
                 {close}
                 </article>
 
