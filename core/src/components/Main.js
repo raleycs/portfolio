@@ -18,7 +18,7 @@ class Main extends React.Component {
                 <h2 className="major">Who Am I?</h2>
                 <span className="image" style={{marginLeft:"20vh"}}><img style={{borderRadius:100},{height:600}, {width:400}} src={profile} alt="Picture of me :)" /></span>
                 <p></p>
-                <p>My name is Christopher Raley. I'm a computer scientist with a strong interest in cybersecurity. I am working towards a B.A. Computer Science degree at the University of Virginia (go hoos). I currently reside in Northern Virginia, but wouldn't mind calling UVA my second home.</p>
+                <p>My name is Christopher Raley. I'm a computer scientist with a strong interest in cybersecurity. I am working towards a B.A. Computer Science degree at the University of Virginia (go hoos).
                 <p>From my high school days I was alway fascinated by the concept of "hacking" (inspired by <a href="https://en.wikipedia.org/wiki/Sneakers_(1992_film)"><em>Sneakers</em></a>), which eventually lead me to self learn programming languages and pen testing techniques.</p>
 
                 <hr/>
